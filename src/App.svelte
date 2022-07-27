@@ -15,7 +15,9 @@
 
 </script>
 
-<Modal />
+<!-- <Modal message="Hey, I am a prop value" isPromo={true}/> -->
+<Modal message="hey there again" />
+
 <main>
 	<div>
 		{#each people as person}
