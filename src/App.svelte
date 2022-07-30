@@ -25,7 +25,7 @@
 
 <main>
 	<div>
-		<button on:click={toggleModal}>Open Modal</button>
+		<button on:click|once={toggleModal}>Open Modal</button>
 		{#each people as person}
 			<div>
 				<h4>{person.name}</h4>
