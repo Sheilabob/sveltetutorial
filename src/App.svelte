@@ -21,7 +21,15 @@
 </script>
 
 <!-- <Modal message="Hey, I am a prop value" isPromo={true}/> -->
-<Modal message="hey there again" {showModal} on:click={toggleModal} />
+<Modal {showModal} on:click={toggleModal}>
+	<h3>Add a New Person</h3>
+	<form>
+		<input type="text" placeholder="name" />
+		<input type="text" placeholder="belt color" />
+		<button>Add Person</button>
+	</form>
+
+</Modal>
 
 <main>
 	<div>
