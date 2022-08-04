@@ -18,12 +18,16 @@
 		// delte the person from people
 		people = people.filter((person) => person.id != id);
 	}
-
+	const addPerson = (e) => {
+		const person = e.detail;
+		people = [person, ...people];
+		showModal = false;
+	}
 </script>
 
 <!-- <Modal message="Hey, I am a prop value" isPromo={true}/> -->
 <Modal {showModal} on:click={toggleModal}>
-	<AddPersonForm />
+	<AddPersonForm on:addPerson={addPerson}/>
 </Modal>
 
 <main>
